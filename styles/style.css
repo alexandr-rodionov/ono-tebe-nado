@@ -1,1 +1,169 @@
-/* место для вашего кода */
+body {
+  font: 400 20px/1.2 Raleway, sans-serif;
+  font-style: normal;
+}
+
+/* --- Начало блока header --- */
+
+.header {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  align-items: end;  
+  padding: 92px 24px 96px;  
+}
+
+.header__links {
+  padding-bottom: 39px; 
+  padding-left: 26px;
+ }
+
+.header__links-list {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullet {
+  list-style: none;
+}
+
+.header__link {
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  text-underline-position: under;
+  text-transform: lowercase;
+}
+
+.header__link_active {
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+.header__logo {
+  display: block;
+  height: 105px;  
+}
+
+.header__logo-image {
+  width: 100%;
+  height: 100%;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2px;
+  padding-left: 184px;
+  text-underline-position: under;
+}
+
+.contacts-link {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}
+
+.contacts-link_street {
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+/* --- Конец блока header ---
+
+  --- Начало блока cover ---*/
+
+  .cover {
+    min-width: 100%;
+    padding:  165px 50px 51px;
+
+    /* Эффект затемнения c помощью линейного градиента с альфа-каналом 
+       opacity: 60% соответствует 99 в HEX*/
+
+    background: linear-gradient(#0009, #0009), url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .cover__title {
+    width: 100%;
+    color: #fff;
+    font: 700 100px/1.15 Raleway, sans-serif;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+  }
+
+  .aligned-text {
+    display: block;
+  }
+  
+  .letter-spacing-extended {
+    letter-spacing: .6em;
+  }
+
+  .aligned-text_center {
+    line-height: 140%;
+    text-align: center;
+  }
+  
+  .aligned-text_right {
+    line-height: 100%;
+    text-align: right;
+  }
+
+  .no-letter-spacing {
+    letter-spacing: 0;
+  }
+
+  .cover__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-top: 135px;
+    padding-left: 28px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .cover__description-text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    word-spacing: 0.8em;
+  }
+  
+.cover__description-text .letter-spacing-extended {
+    letter-spacing: 1.1em;
+  }
+
+.cover__description-text span {
+    word-spacing: 0.9em;
+  }
+
+.bet-button {
+  width: 256px;
+  height: 51px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: transparent;
+ }
+
+
+ 
+/* --- Конец блока cover ---
+
+  --- Начало блока lots ---*/
+
+
+
+/* --- Конец блока lots ---
+
+  --- Начало блока about ---*/
+  
