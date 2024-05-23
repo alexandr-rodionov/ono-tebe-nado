@@ -14,3 +14,11 @@
 - main/styles/styles.css — основной файл стилей
 
 **Ссылка на проект _[ono-tebe-nado](https://github.com/alexandr-rodionov/ono-tebe-nado.git)_**
+
+*Status:*
+- :white_check_mark: **header**
+- :black_square_button: **main**
+    - :white_check_mark: **cover**
+    - :white_check_mark: **lots (~1/2)**
+	- :black_square_button: **about**
+- :black_square_button: **footer**

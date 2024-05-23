@@ -210,8 +210,8 @@ body {
   justify-content: space-between;
 }
 
-.card_type_film {  
-  background: linear-gradient(#0009, #0009),url(../images/card-lot-01.jpg);  
+.card_type_film {
+  background: linear-gradient(#0009, #0009),url(../images/card-lot-01.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -265,11 +265,11 @@ body {
   padding-right: 24px;
   padding-bottom: 193px;
   display: grid;
-  grid: 240px auto / 334px auto;  
+  grid: 240px auto / 334px auto;
 }
 
 .about__logo {
-  text-align: center;  
+  text-align: center;
   background-color: #000;
   border-radius: 50%;
   justify-self: center;
