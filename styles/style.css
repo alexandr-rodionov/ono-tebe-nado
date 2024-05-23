@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font: 400 20px/1.2 Raleway, sans-serif;
   font-style: normal;
@@ -8,12 +12,12 @@ body {
 .header {
   display: grid;
   grid-template-columns: 3fr 1fr 3fr;
-  align-items: end;  
-  padding: 92px 24px 96px;  
+  align-items: end;
+  padding: 92px 24px 96px;
 }
 
 .header__links {
-  padding-bottom: 39px; 
+  padding-bottom: 39px;
   padding-left: 26px;
  }
 
@@ -39,11 +43,12 @@ body {
 .header__link_active {
   letter-spacing: 0;
   text-decoration: none;
+  cursor: default;
 }
 
 .header__logo {
   display: block;
-  height: 105px;  
+  height: 105px;
 }
 
 .header__logo-image {
@@ -57,6 +62,8 @@ body {
   padding-bottom: 2px;
   padding-left: 184px;
   text-underline-position: under;
+  text-decoration-thickness: 1px;
+  text-underline-offset: -1px;
 }
 
 .contacts-link {
@@ -121,7 +128,7 @@ body {
   .cover__description {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     padding-top: 135px;
     padding-left: 28px;
     color: #fff;
@@ -132,7 +139,7 @@ body {
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
-    word-spacing: 0.8em;
+    word-spacing: .8em;
   }
   
 .cover__description-text .letter-spacing-extended {
@@ -140,7 +147,7 @@ body {
   }
 
 .cover__description-text span {
-    word-spacing: 0.9em;
+    word-spacing: .9em;
   }
 
 .bet-button {
@@ -154,16 +161,146 @@ body {
   text-transform: uppercase;
   background-color: transparent;
  }
-
+ 
+ .bet-button:active {
+  border-color: #000;
+  color: #000;
+  background-color: #fff;
+ }
 
  
 /* --- Конец блока cover ---
 
   --- Начало блока lots ---*/
 
+.lots {
+  padding: 179px 24px 146px;
+}
 
+.lots__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+  padding-left: 40px;
+}
+
+.lots__card-list {
+  padding: 27px 0 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 25px;
+  list-style: none;
+  color:#fff;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+  background-color: #000;
+  text-decoration: none;
+}
+
+.card {
+  height: 100%;
+  padding: 51px 40px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_type_film {  
+  background: linear-gradient(#0009, #0009),url(../images/card-lot-01.jpg);  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_book {
+  background-color: #000;
+  background: linear-gradient(#0009, #0009), url(../images/card-lot-02.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card_type_picture {
+  background-color: #000;
+  background: linear-gradient(#0009, #0009), url(../images/card-lot-03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  text-underline-position: under;
+  text-decoration-thickness: 1px;
+  text-underline-offset: -2px;
+  line-height: 26px;
+}
+
+.card__text span {
+  letter-spacing: .13em;
+}
+
+.lots__look-more-link {
+  text-transform: lowercase;
+  padding-left: 40px;
+  text-underline-position: under;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 1px;
+}
 
 /* --- Конец блока lots ---
 
   --- Начало блока about ---*/
+
+.about {
+  padding-top: 36px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 193px;
+  display: grid;
+  grid: 240px auto / 334px auto;  
+}
+
+.about__logo {
+  text-align: center;  
+  background-color: #000;
+  border-radius: 50%;
+  justify-self: center;
+  display: flex;
+  height: 240px;
+  width: 240px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__logo-image {
+  width: 62%;
+  padding: auto;
+  margin: auto;
+}
+
+.about__title {
+  text-transform: uppercase;
+}
+
+.about__text {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Конец блока about ---
+
+  --- Начало блока footer ---*/
+  
+
+
+/* --- Конец блока footer --- */
   
