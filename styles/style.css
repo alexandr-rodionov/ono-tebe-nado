@@ -87,7 +87,7 @@ body {
     /* Эффект затемнения c помощью линейного градиента с альфа-каналом 
        opacity: 60% соответствует 99 в HEX*/
 
-    background: linear-gradient(#0009, #0009), url(../images/cover.jpg) no-repeat center / cover;    
+    background: linear-gradient(#0009, #0009), url(../images/cover.jpg) no-repeat center / cover;
   }
   
   .cover__title {
@@ -246,7 +246,7 @@ body {
   grid: 240px 1fr / repeat(3, 1fr);
   row-gap: 8px;
   column-gap: 25px;
-  padding: 36px 24px 180px;  
+  padding: 36px 24px 180px;
 }
 
 .about__logo {
@@ -297,7 +297,7 @@ body {
 }
   
 .footer__contacts {
-  flex-direction: column;  
+  flex-direction: column;
   padding: 0;
 }
   
@@ -325,7 +325,7 @@ body {
 .footer__social-list {
   display: flex;
   justify-content: flex-end;
-  gap: 48px;  
+  gap: 48px;
   list-style: none;
 }
   

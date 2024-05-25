@@ -17,8 +17,8 @@
 
 **_Status:_**
 - :white_check_mark: **header**
-- :black_square_button: **main**
+- :white_check_mark: **main**
     - :white_check_mark: **cover**
     - :white_check_mark: **lots**
-	- :black_square_button: **about (~1/2)**
-- :black_square_button: **footer**
+	- :white_check_mark: **about (~1/2)**
+- :white_check_mark: **footer**
