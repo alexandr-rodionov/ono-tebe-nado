@@ -1,13 +1,13 @@
 # Семантика и лэйаут (1 спринт)
 ## Проектная работа "Оно тебе надо"
 
-Структура:
+###Структура:
 - main/ — корневой каталог
 - main/fonts/ — каталог шрифтов
 - main/images/ — каталог изображений
 - main/styles/ — каталог стилей
 
-Файлы:
+###Файлы:
 - main/index.html — HTML-файл страницы
 - main/fonts.css — файл стилей шрифтов (подключение шрифтов)
 - main/styles/global.css — глобальный файл стилей (сброс браузерных отступов + ширина + шрифт)
@@ -15,7 +15,7 @@
 
 **Ссылка на проект _[ono-tebe-nado](https://github.com/alexandr-rodionov/ono-tebe-nado.git)_**
 
-**_Status:_**
+###_Status:_
 - :white_check_mark: **header**
 - :white_check_mark: **main**
     - :white_check_mark: **cover**
