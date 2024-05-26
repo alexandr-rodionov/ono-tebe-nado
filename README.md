@@ -15,7 +15,7 @@
 
 **Ссылка на проект _[ono-tebe-nado](https://github.com/alexandr-rodionov/ono-tebe-nado.git)_**
 
-**_[Status:]_**
+**_Status:_**
 - :white_check_mark: **header**
 - :white_check_mark: **main**
     - :white_check_mark: **cover**
