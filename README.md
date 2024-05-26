@@ -15,10 +15,10 @@
 
 **Ссылка на проект _[ono-tebe-nado](https://github.com/alexandr-rodionov/ono-tebe-nado.git)_**
 
-**_Status:_**
+**_[Status:]_**
 - :white_check_mark: **header**
 - :white_check_mark: **main**
     - :white_check_mark: **cover**
     - :white_check_mark: **lots**
-	- :white_check_mark: **about (~1/2)**
+	- :white_check_mark: **about**
 - :white_check_mark: **footer**
