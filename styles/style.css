@@ -12,18 +12,18 @@ body {
 .header {
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
-  align-items: end;
   padding: 92px 24px 96px;
 }
 
 .header__links {
-  padding-bottom: 39px;
-  padding-left: 26px;
- }
+  margin-top: 42px;
+  margin-right: 35px;
+}
 
 .header__links-list {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   gap: 32px;
   list-style: circle;
 }
@@ -34,7 +34,7 @@ body {
 
 .header__link {
   font-size: 18px;
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
   text-decoration-thickness: 1px;
   text-underline-position: under;
   text-transform: lowercase;
@@ -59,14 +59,12 @@ body {
 .contacts {
   display: flex;
   flex-direction: column;
-  padding-bottom: 2px;
-  padding-left: 184px;
+  margin-top: 6px;
+  margin-left: 186px;
 }
 
 .contacts-link {
-  font-size: 18px;
-  font-style: normal;
-  line-height: 1.35em;
+  font: 400 18px/1.35 Raleway, sans-serif;
   letter-spacing: 0.01em;
   text-decoration-thickness: 1px;
   text-underline-position: under;
@@ -80,90 +78,86 @@ body {
 /* --- Конец блока header ---
   --- Начало блока cover ---*/
 
-  .cover {
-    min-width: 100%;
-    padding:  165px 50px 51px;
+.cover {
+  min-width: 100%;
+  padding: 165px 50px 51px;
 
-    /* Эффект затемнения c помощью линейного градиента с альфа-каналом 
-       opacity: 60% соответствует 99 в HEX*/
+  /* Эффект затемнения c помощью линейного градиента с альфа-каналом
+     opacity: 60% соответствует 99 в HEX*/
 
-    background: linear-gradient(#0009, #0009), url(../images/cover.jpg) no-repeat center / cover;
-  }
-  
-  .cover__title {
-    width: 100%;
-    color: #fff;
-    font: 700 100px/1.15 Raleway, sans-serif;
-    letter-spacing: .3em;
-    text-transform: uppercase;
-  }
+  background: linear-gradient(#0009, #0009),
+    url(../images/cover.jpg) no-repeat center / cover;
+}
 
-  .aligned-text {
-    display: block;
-  }
-  
-  .letter-spacing-extended {
-    letter-spacing: .6em;
-  }
+.cover__title {
+  width: 100%;
+  color: #fff;
+  font: 700 100px / 1.15 Raleway, sans-serif;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
 
-  .aligned-text_center {
-    line-height: 1.4em;
-    text-align: center;
-  }
-  
-  .aligned-text_right {
-    line-height: 1em;
-    text-align: right;
-  }
+.aligned-text {
+  display: block;
+}
 
-  .no-letter-spacing {
-    letter-spacing: 0;
-  }
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
 
-  .cover__description {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 135px;
-    padding-left: 28px;
-    color: #fff;
-    text-transform: uppercase;
-  }
-  
-  .cover__description-text {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 28px;
-    word-spacing: .8em;
-  }
-  
+.aligned-text_center {
+  line-height: 1.4em;
+  text-align: center;
+}
+
+.aligned-text_right {
+  line-height: 1em;
+  text-align: right;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 135px;
+  margin-left: 28px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.cover__description-text {
+  font: 400 22px / 1.273 Raleway, sans-serif;
+  word-spacing: 0.8em;
+}
+
 .cover__description-text .letter-spacing-extended {
-    letter-spacing: 1.1em;
-  }
+  letter-spacing: 1.1em;
+}
 
-.cover__description-text span {
-    word-spacing: .9em;
-  }
+.cover__description-text .word-spacing-extended {
+  word-spacing: 0.9em;
+}
 
 .bet-button {
   width: 256px;
   height: 51px;
   border: 1px solid #fff;
   color: #fff;
-  font-family: Raleway, sans-serif;
-  font-weight: 500;
-  font-size: 22px;
+  font: 500 22px / 1.17 Raleway, sans-serif;
   text-transform: uppercase;
   background-color: transparent;
- }
- 
- .bet-button:active {
+}
+
+.bet-button:active {
   border-color: #000;
   color: #000;
   background-color: #fff;
- }
+}
 
- 
 /* --- Конец блока cover ---
   --- Начало блока lots ---*/
 
@@ -172,10 +166,8 @@ body {
 }
 
 .lots__title {
-  padding-left: 40px;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 47px;
+  margin-left: 40px;
+  font: 700 40px / 1.174 Raleway, sans-serif;
   text-transform: uppercase;
 }
 
@@ -184,8 +176,8 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 1fr;
   gap: 25px;
-  padding: 27px 0 30px;
-  color:#fff;
+  margin: 27px 0 30px;
+  color: #fff;
   list-style: none;
 }
 
@@ -205,20 +197,22 @@ body {
 }
 
 .card_type_film {
-  background: linear-gradient(#0009, #0009),url(../images/card-lot-01.jpg) no-repeat center / cover;
+  background: linear-gradient(#0009, #0009),
+    url(../images/card-lot-01.jpg) no-repeat center / cover;
 }
 
 .card_type_book {
-  background: linear-gradient(#0009, #0009), url(../images/card-lot-02.jpg) no-repeat center / cover;
+  background: linear-gradient(#0009, #0009),
+    url(../images/card-lot-02.jpg) no-repeat center / cover;
 }
+
 .card_type_picture {
-  background: linear-gradient(#0009, #0009), url(../images/card-lot-03.jpg) no-repeat center / cover;
+  background: linear-gradient(#0009, #0009),
+    url(../images/card-lot-03.jpg) no-repeat center / cover;
 }
 
 .card__title {
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
+  font: 700 22px / 1.182 Raleway, sans-serif;
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: -2px;
@@ -226,12 +220,12 @@ body {
   text-transform: uppercase;
 }
 
-.card__text span {
-  letter-spacing: .13em;
+.card__text .letter-spacing-extended {
+  letter-spacing: 0.13em;
 }
 
 .lots__look-more-link {
-  padding-left: 40px;
+  margin-left: 40px;
   text-decoration-thickness: 1px;
   text-underline-offset: 1px;
   text-underline-position: under;
@@ -252,26 +246,21 @@ body {
 .about__logo {
   display: flex;
   justify-self: center;
-  justify-content: center;
-  align-items: center;
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  text-align: center;
   background-color: #000;
 }
 
 .about__logo-image {
   width: 148px;
-  height: 47.5%;
   margin: auto;
 }
 
 .about__title {
   grid-column: span 2;
-  padding-top: 101px;
-  font-weight: 700;
-  font-size: 40px;
+  margin-top: 101px;
+  font: 700 40px / 1.18 Raleway, sans-serif;
   text-transform: uppercase;
 }
 
@@ -281,26 +270,24 @@ body {
   grid-column: 2 / span 2;
   grid-row: 2 / span 2;
   gap: 25px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.2em;
+  font: 400 20px / 1.2 Raleway, sans-serif;
 }
 
 /* --- Конец блока about ---
   --- Начало блока footer ---*/
-  
+
 .footer {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   justify-content: space-between;
   padding: 0 50px 88px;
 }
-  
+
 .footer__contacts {
   flex-direction: column;
-  padding: 0;
+  margin: 0;
 }
-  
+
 .footer__menu-list {
   display: flex;
   flex-direction: column;
@@ -313,11 +300,11 @@ body {
 }
 
 .footer__menu-link {
-  font-size: 18px;
+  font: 400 18px / 1.17 Raleway, sans-serif;
   text-underline-position: under;
   text-transform: lowercase;
 }
-  
+
 .footer__menu-link_active {
   text-decoration: none;
 }
@@ -328,7 +315,7 @@ body {
   gap: 48px;
   list-style: none;
 }
-  
+
 .footer__social-link {
   display: block;
   width: 48px;
@@ -339,4 +326,3 @@ body {
 }
 
 /* --- Конец блока footer --- */
-  
